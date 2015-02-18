@@ -1,26 +1,131 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Freelancer](http://startbootstrap.com/template-overviews/freelancer/)
+Particleground
+==============
 
-[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
+A jQuery plugin for snazzy background particle systems. Includes an optional parallax effect controlled by the mouse on desktop devices and gyroscope on mobile devices. Works in any browser that supports HTML5 canvas.
 
-## Getting Started
+[See a demo](https://jnicol.github.io/particleground)
 
-To use this theme, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+## Usage
 
-## Bugs and Issues
+    $('#your-element').particleground();
 
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
+## Options
 
-## Creator
+Options can be set by passing an options object to the constructor.
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+Here is an example of setting the color of the particle system dots and lines:
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+    $('#your-element').particleground({
+        dotColor: '#ff0000',
+        lineColor: '#ff0000'
+    });
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+Here is a full list of options, and their default values:
 
-## Copyright and License
+### minSpeedX
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
+    0.1
+
+### maxSpeedX
+
+    0.7
+
+### minSpeedY
+
+    0.1
+
+### maxSpeedY
+
+    0.7
+
+### directionX
+
+    'center'
+
+Can be one of `'center'`, `'left' or `'right'`. `'center'` means that the dots will bounce off the edges of the canvas.
+
+### directionY
+
+    'center'
+
+Can be one of `'center'`, `'up'` or `'down'`. `'center'` means that the dots will bounce off the edges of the canvas.
+
+### density
+
+    10000
+
+Determines how many particles will be generated: one particle every n pixels.
+
+### dotColor
+
+    '#666666'
+
+### lineColor
+
+    '#666666'
+
+### particleRadius
+
+    7
+
+Dot size
+
+### lineWidth
+
+    1
+
+### curvedLines
+
+    false
+
+### proximity
+
+    100
+
+How close two dots need to be, in pixels, before they join.
+
+### parallax
+
+    true
+
+### parallaxMultiplier
+
+    5
+
+The lower the number, the more extreme the parallax effect wil be.
+
+### onInit
+
+    function() {}
+
+A callback executed after Particleground initializes.
+
+### onDestroy
+
+    function() {}
+
+A callback executed after Particleground is destroyed.
+
+## Methods
+
+### pause
+
+Pauses the particle system.
+
+    $('#your-element').particlegound('pause');
+
+### start
+
+Restarts the particle system if you previously paused it.
+
+    $('#your-element').particlegound('start');
+
+### destroy
+
+Removes the plugin from your element.
+
+    $('#your-element').particlegound('destroy');
+
+## Credits
+
+Particleground was inspired by http://requestlab.fr/ and http://disruptivebydesign.com/ 
