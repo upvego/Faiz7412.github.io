@@ -1,5 +1,5 @@
 /* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
+   HTML5 CSS 
    ========================================================================== */
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
@@ -14,10 +14,10 @@ nav ul{list-style:none}
    My CSS
    ========================================================================== */
 
-html,body{ 
-	width:100%;
-	height:100%;
-	background:#111;
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* remove canvas default margin */
@@ -61,18 +61,12 @@ table {
   border-spacing: 0;
 }
 
-/* particleground demo */
+/* particle */
 
 * { 
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -134,8 +128,8 @@ p {
           transition: all 0.4s;
 }
 .btn:hover {
-  color: #005544;
-  border-color: #005544;
+  color: #2c66c7;
+  border-color: #154eb0;
 }
 
 @media only screen and (max-width: 1000px) {
