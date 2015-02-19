@@ -1,1 +1,1 @@
-Landing page for website
+Landing page for faiz.io
