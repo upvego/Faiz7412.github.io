@@ -76,12 +76,14 @@ html, body {
 }
 
 body {
-  background: url(searchfortruth.jpg);
+  background: url(searchfortruth.jpg) no-repeat #000;
+  background-stre
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   line-height: 1.0;
   -webkit-font-smoothing: antialiased;
-}
+  background-size: 100%;
+  }
 
 #particles {
   width: 100%;
