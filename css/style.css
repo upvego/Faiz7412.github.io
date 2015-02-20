@@ -76,6 +76,7 @@ body {
   line-height: 1.0;
   -webkit-font-smoothing: antialiased;
   background-size: 100%;
+  text-shadow: 2px 2px 50px #1c1b1b;
   }
 
 #particles {
@@ -110,6 +111,7 @@ h1::after {
 p {
   margin: 0 0 30px 0;
   font-size: 24px;
+  text-shadow: 1px 1px 5px #000000;
 }
 .btn {
   display: inline-block;
