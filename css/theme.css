@@ -1,6 +1,6 @@
 /* you dont need this CSS in your project */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,700);
-
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +8,8 @@ body {
   color: #444;
   overflow-x: hidden;
 }
+
+
 h1, h2, h3, h4, h5, h6, nav a  {
   font-family: 'Raleway', sans-serif;
   font-weight: 100
@@ -170,4 +172,22 @@ section:nth-of-type(2) article:nth-of-type(1) {
   width: 150px;
   height: auto;
 }
+
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  font-family: 'Raleway', sans-serif;
+  color: #fafafa;
+}
+.dud {
+  color: #757575;
+}
+
 
