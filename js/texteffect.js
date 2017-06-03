@@ -81,14 +81,14 @@ var TextScramble = function () {
 // Example
 // ——————————————————————————————————————————————————
 
-var phrases = ["Full stack Web Developer,", "Computer Systems Engineering student at University of Massachusetts, Amherst", "But do these identify me uniquely? No.", "I\'m a free soul", "I represent an idea.", "If I'm good enough", "You'll know all about me there is to know."];
-var introduction = [".", "Just another curious soul on planet Earth"];
+var phrases = ["Just another curious soul on planet Earth.", "Full stack Web Developer (MERN)", "Computer Systems Engineering student at University of Massachusetts, Amherst", "I represent an idea."];
+// var introduction = [".", "Just another curious soul on planet Earth"];
 
-var el = document.querySelector(".text");
-var el2 = document.querySelector(".intro_curious");
+var el = document.querySelector(".intro_curious");
+// var el2 = document.querySelector(".text");
 
 var fx = new TextScramble(el);
-var fx2 = new TextScramble(el2);
+// var fx2 = new TextScramble(el2);
 
 var counter = 0;
 var next = function next() {
@@ -101,13 +101,13 @@ var next = function next() {
 
 next();
 
-var counter2 = 0;
-var next2 = function next2() {
+// var counter2 = 0;
+// var next2 = function next2() {
 
-  fx2.setText(introduction[counter]).then(function () {
-    setTimeout(next2, 800);
-  });
-  counter2 = (counter2 + 1) % introduction.length;
+//   fx2.setText(introduction[counter]).then(function () {
+//     setTimeout(next2, 800);
+//   });
+//   counter2 = (counter2 + 1) % introduction.length;
 
-};
-next2();
+// };
+// next2();
