@@ -81,7 +81,7 @@ var TextScramble = function () {
 // Example
 // ——————————————————————————————————————————————————
 
-var phrases = ["Just another curious soul on planet Earth.", "Full stack Web Developer (MERN)", "Computer Systems Engineering student at University of Massachusetts, Amherst", "I represent an idea."];
+var phrases = ["Just another curious soul on planet Earth.", "Full stack Web Developer (MERN)", "Student at University of Massachusetts, Amherst", "I represent an Idea."];
 // var introduction = [".", "Just another curious soul on planet Earth"];
 
 var el = document.querySelector(".intro_curious");
